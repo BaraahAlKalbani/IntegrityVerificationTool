@@ -46,8 +46,14 @@ public class FirstHash
 			}
 			else if(input==2)
 			{
+				System.out.println("\tEnter first text:");
+				String TS1 = new Scanner(System.in).nextLine();
+				System.out.println("\tEnter second text:");
+				String TS2 = new Scanner(System.in).nextLine();
 				valid=true;
 				System.out.println("\t--Comparing HASH--");
+				System.out.println(TS1+" :\t"+toHexString(getSHA(TS1)));
+				System.out.println(TS2+" :\t"+toHexString(getSHA(TS2)));
 				break;
 			}
 			else if(input==3) 
