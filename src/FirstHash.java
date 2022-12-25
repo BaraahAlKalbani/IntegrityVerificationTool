@@ -32,11 +32,12 @@ public class FirstHash
 		{
 			System.out.println("\tEnter Your Input:");
 			int input=sc.nextInt();
+			sc.nextLine();
 
 			if(input==1)
 			{
 				System.out.println("\tEnter text:");
-				String TS = new Scanner(System.in).nextLine();
+				String TS = sc.nextLine();
 
 				System.out.println("\t\t--Genarating HASH--");
 				System.out.println(TS+" :\t"+toHexString(getSHA(TS)));
@@ -47,9 +48,10 @@ public class FirstHash
 			else if(input==2)
 			{
 				System.out.println("\tEnter first text:");
-				String TS1 = new Scanner(System.in).nextLine();
+				String TS1 = sc.nextLine();
 				System.out.println("\tEnter second text:");
-				String TS2 = new Scanner(System.in).nextLine();
+				sc.nextLine();
+				String TS2 = sc.nextLine();
 				valid=true;
 				System.out.println("\t--Comparing HASH--");
 				System.out.println(TS1+" :\t"+toHexString(getSHA(TS1)));
